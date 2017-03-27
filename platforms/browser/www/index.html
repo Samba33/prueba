@@ -29,6 +29,15 @@
 		<!-- Include the jQuery Mobile library -->
 		<script src="design/jquery.mobile-1.4.5.min.js"></script>
 
+		<style type="text/css">
+			#session {
+				background-color: #fffa9d;
+			}
+			#next {
+				background-color: #aaaa9d;
+			}
+		</style>
+
         <title>Blank App</title>
     </head>
     <body>
@@ -38,16 +47,16 @@
 		        <h1>Mis sesiones</h1>
 
 				<div class="ui-grid-b ui-responsive">
-				    <div class="ui-block-a"><a href="#sesion1" class="ui-btn ui-shadow ui-corner-all">Día 1</a></div>
-				    <div class="ui-block-b"><a href="#sesion2" class="ui-btn ui-shadow ui-corner-all">Día 2</a></div>
+				    <div class="ui-block-a"><a href="#sesion1" class="ui-btn ui-shadow ui-corner-all" id="session">Día 1</a></div>
+				    <div class="ui-block-b"><a href="#sesion2" class="ui-btn ui-shadow ui-corner-all" id="session">Día 2</a></div>
 				</div>
 				<div class="ui-grid-b ui-responsive">
-				    <div class="ui-block-a"><a href="#sesion3" class="ui-btn ui-shadow ui-corner-all">Día 3</a></div>
-				    <div class="ui-block-b"><a href="#sesion4" class="ui-btn ui-shadow ui-corner-all">Día 4</a></div>
+				    <div class="ui-block-a"><a href="#sesion3" class="ui-btn ui-shadow ui-corner-all" id="session">Día 3</a></div>
+				    <div class="ui-block-b"><a href="#sesion4" class="ui-btn ui-shadow ui-corner-all" id="session">Día 4</a></div>
 				</div>
 				<div class="ui-grid-b ui-responsive">
-				    <div class="ui-block-a"><a href="#sesion5" class="ui-btn ui-shadow ui-corner-all">Día 5</a></div>
-				    <div class="ui-block-b"><a href="#sesion6" class="ui-btn ui-shadow ui-corner-all">Día 6</a></div>
+				    <div class="ui-block-a"><a href="#sesion5" class="ui-btn ui-shadow ui-corner-all" id="session">Día 5</a></div>
+				    <div class="ui-block-b"><a href="#sesion6" class="ui-btn ui-shadow ui-corner-all" id="session">Día 6</a></div>
 				</div>		       
 		    </div>
 		    <!-- /content -->
@@ -58,7 +67,7 @@
 		<!-- Start of sesion 1 -->
 		<div data-role="page" id="sesion1">
 		    <div role="main" class="ui-content">
-		    	<a href="#mis-sesiones" class="ui-btn">Mis Sesiones</a>
+		    	<a href="#mis-sesiones" class="ui-btn" id="next">Mis Sesiones</a>
 		        <h1>Día 1</h1>
 
 		        <div data-role="collapsible" data-inset="false">		        	
@@ -91,7 +100,7 @@
 			    </div>
 
 			    <div class="ui-grid-b ui-responsive">
-				    <div class="ui-icon-carat-u"><a href="#sesion1-explicacion1-2" class="ui-btn ui-shadow ui-corner-all">Siguiente</a></div>
+				    <div class="ui-icon-carat-u"><a href="#sesion1-explicacion1-2" class="ui-btn ui-shadow ui-corner-all" id="next">Siguiente</a></div>
 				</div>
 			    
 			    <!-- /content -->
@@ -106,7 +115,7 @@
 				    </div>
 
 				   <div class="ui-grid-b ui-responsive">
-				        <div class="ui-icon-carat-u"><a href="#sesion1-explicacion1-3" class="ui-btn ui-shadow ui-corner-all">Siguiente</a></div>
+				        <div class="ui-icon-carat-u"><a href="#sesion1-explicacion1-3" class="ui-btn ui-shadow ui-corner-all" id="next">Siguiente</a></div>
 					</div>
 				    <!-- /content -->
 				</div>
@@ -121,7 +130,7 @@
 				    <!-- /content -->
 
 				    <div class="ui-grid-b ui-responsive">
-				        <div class="ui-icon-carat-u"><a href="#sesion1-instrucciones1-1" class="ui-btn ui-shadow ui-corner-all">Siguiente</a></div>
+				        <div class="ui-icon-carat-u"><a href="#sesion1-instrucciones1-1" class="ui-btn ui-shadow ui-corner-all" id="next">Siguiente</a></div>
 					</div>
 				</div>
 				<!-- /page -->
@@ -134,7 +143,7 @@
 				</div>
 
 				<div class="ui-grid-b ui-responsive">
-				    <div class="ui-icon-carat-u"><a href="#sesion1-video1" class="ui-btn ui-shadow ui-corner-all">Siguiente</a></div>
+				    <div class="ui-icon-carat-u"><a href="#sesion1-video1" class="ui-btn ui-shadow ui-corner-all" id="next">Siguiente</a></div>
 				</div>
 				<!-- /content -->
 			</div>
@@ -144,13 +153,15 @@
 			<div data-role="page" id="sesion1-video1">
 				<div role="main" class="ui-content">
 
-				<a href="http://www.youtube.com/embed/m2Fy5_Y1XAY" target="_blank">Video en el Vientre</a>
+				<!--<a href="http://www.youtube.com/embed/m2Fy5_Y1XAY" target="_blank">Video en el Vientre</a>-->
+				<iframe src="http://www.youtube.com/embed/m2Fy5_Y1XAY"></iframe>
+				<iframe width="600" height="300" src="https://www.youtube.com/embed/m2Fy5_Y1XAY" frameborder="0" allowfullscreen></iframe>
 				<!--<a class="fancybox" data-type="iframe " href="http://www.youtube.com/embed/m2Fy5_Y1XAY?autoplay=1" title="youtube">open youtube (embed mode)</a>
 					<!--<a class="fancybox" data-type="iframe " href="https://www.youtube.com/watch?v=m2Fy5_Y1XAY?autoplay=1" title="youtube">open youtube (embed mode)</a>-->
 				</div>
 
 				<div class="ui-grid-b ui-responsive">
-				    <div class="ui-icon-carat-u"><a href="#sesion1-instrucciones2-1" class="ui-btn ui-shadow ui-corner-all">Siguiente</a></div>
+				    <div class="ui-icon-carat-u"><a href="#sesion1-instrucciones2-1" class="ui-btn ui-shadow ui-corner-all" id="next">Siguiente</a></div>
 				</div>
 				<!-- /content -->
 			</div>
@@ -164,7 +175,7 @@
 				</div>
 
 				<div class="ui-grid-b ui-responsive">
-				    <div class="ui-icon-carat-u"><a href="#sesion1-cuestionario1-1" class="ui-btn ui-shadow ui-corner-all">Siguiente</a></div>
+				    <div class="ui-icon-carat-u"><a href="#sesion1-cuestionario1-1" class="ui-btn ui-shadow ui-corner-all" id="next">Siguiente</a></div>
 				</div>
 				<!-- /content -->
 			</div>
@@ -190,7 +201,7 @@
 			    </div>
 
 			    <div class="ui-grid-b ui-responsive">
-				    <div class="ui-icon-carat-u"><a href="#sesion1-cuestionario1-2" class="ui-btn ui-shadow ui-corner-all">Siguiente</a></div>
+				    <div class="ui-icon-carat-u"><a href="#sesion1-cuestionario1-2" class="ui-btn ui-shadow ui-corner-all" id="next">Siguiente</a></div>
 				</div>
 
 			    <!-- /content -->
@@ -223,7 +234,7 @@
 			    </div>
 
 			    <div class="ui-grid-b ui-responsive">
-				    <div class="ui-icon-carat-u"><a href="#sesion1-completada" class="ui-btn ui-shadow ui-corner-all">Siguiente</a></div>
+				    <div class="ui-icon-carat-u"><a href="#sesion1-completada" class="ui-btn ui-shadow ui-corner-all" id="next">Siguiente</a></div>
 				</div>
 			    <!-- /content -->
 			</div>
@@ -241,7 +252,7 @@
 		<!-- Start of sesion 2 -->
 		<div data-role="page" id="sesion2">
 		    <div role="main" class="ui-content">
-		    	<a href="#mis-sesiones" class="ui-btn">Mis Sesiones</a>
+		    	<a href="#mis-sesiones" class="ui-btn" id="next">Mis Sesiones</a>
 		        <h1>Día 2</h1>
 		    </div>
 		    <!-- /content -->
