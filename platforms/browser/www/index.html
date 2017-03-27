@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+
+		<!-- Include meta tag to ensure proper rendering and touch zooming -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Include jQuery Mobile stylesheets -->
+		<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+		<!-- Include the jQuery library -->
+		<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+		<!-- Include the jQuery Mobile library -->
+		<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+		<script type="text/javascript" src="/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+
+        <title>Blank App</title>
+    </head>
+    <body>
+		<!-- Start of my sesions-->
+		<div data-role="page" id="mis-sesiones">
+		    <div role="main" class="ui-content">
+		        <h1>Mis sesiones</h1>
+
+				<div class="ui-grid-b ui-responsive">
+				    <div class="ui-block-a"><a href="#sesion1" class="ui-btn ui-shadow ui-corner-all">Día 1</a></div>
+				    <div class="ui-block-b"><a href="#sesion2" class="ui-btn ui-shadow ui-corner-all">Día 2</a></div>
+				</div>
+				<div class="ui-grid-b ui-responsive">
+				    <div class="ui-block-a"><a href="#sesion3" class="ui-btn ui-shadow ui-corner-all">Día 3</a></div>
+				    <div class="ui-block-b"><a href="#sesion4" class="ui-btn ui-shadow ui-corner-all">Día 4</a></div>
+				</div>
+				<div class="ui-grid-b ui-responsive">
+				    <div class="ui-block-a"><a href="#sesion5" class="ui-btn ui-shadow ui-corner-all">Día 5</a></div>
+				    <div class="ui-block-b"><a href="#sesion6" class="ui-btn ui-shadow ui-corner-all">Día 6</a></div>
+				</div>		       
+		    </div>
+		    <!-- /content -->
+		</div>
+		<!-- /page -->
+
+
+		<!-- Start of sesion 1 -->
+		<div data-role="page" id="sesion1">
+		    <div role="main" class="ui-content">
+		    	<a href="#mis-sesiones" class="ui-btn">Mis Sesiones</a>
+		        <h1>Día 1</h1>
+
+		        <div data-role="collapsible" data-inset="false">		        	
+					<h3>Tarea 1</h3>
+		        		<ul data-role="listview">
+		        			<li><a href="#sesion1-explicacion1-1">Explicación</a></li>
+							<li><a href="#sesion1-instrucciones1-1">Instrucciones</a></li>
+							<li><a href="#sesion1-video1">Video</a></li>
+							<li><a href="#sesion1-instrucciones2-1">Instrucciones</a></li>
+							<li><a href="#sesion1-cuestionario1-1">Cuestionario</a></li>
+		        		</ul>
+				</div><!-- /collapsible -->
+				<div data-role="collapsible" data-inset="false">		        	
+					<h3>Tarea 2</h3>
+		        		<ul data-role="listview">
+		        			<li><a href="#">Instrucciones</a></li>
+		        		</ul>
+				</div><!-- /collapsible -->
+		    </div>
+		    <!-- /content -->
+		</div>
+		<!-- /page -->
+
+
+			<!-- SESION 1: Start of sesion1-explicacion1-->
+			<div data-role="page" id="sesion1-explicacion1-1">
+			    <div role="main" class="ui-content">
+			    	<h1>Explicación 1/3</h1>
+			    	<p> Lo primero que vamos a hacer es presentar brevemente los cambios que el embarazo supone tanto para la madre como para el bebé. Además veremos la importancia de las emociones y de la salud física y mental durante el mismo. También os ayudaremos a estimular a vuestro feto. </p>
+			    </div>
+
+			    <div class="ui-grid-b ui-responsive">
+				    <div class="ui-icon-carat-u"><a href="#sesion1-explicacion1-2" class="ui-btn ui-shadow ui-corner-all">Siguiente</a></div>
+				</div>
+			    
+			    <!-- /content -->
+			</div>
+			<!-- /page -->
+
+				<!-- SESION 1: Start of sesion1-explicacion1-2-->
+				<div data-role="page" id="sesion1-explicacion1-2">
+				    <div role="main" class="ui-content">
+						<h1>Explicación 2/3</h1>
+				    	<p> Para ello visualizaréis dos videos, uno de ellos mostrará la evolución del feto en el útero de la madre, y el otro explicará las emociones que pueden surgir durante el embarazo. </p>
+				    </div>
+
+				   <div class="ui-grid-b ui-responsive">
+				        <div class="ui-icon-carat-u"><a href="#sesion1-explicacion1-3" class="ui-btn ui-shadow ui-corner-all">Siguiente</a></div>
+					</div>
+				    <!-- /content -->
+				</div>
+				<!-- /page -->
+
+				<!-- SESION 1: Start of sesion1-explicacion1-3-->
+				<div data-role="page" id="sesion1-explicacion1-3">
+				    <div role="main" class="ui-content">
+						<h1>Explicación 3/3</h1>
+				    	<p> Finalmente vamos a reflexionar sobre el contenido de los vídeos y contestaréis a algunas preguntas relacionadas con la información que se os ha presentado. </p>
+				    </div>
+				    <!-- /content -->
+
+				    <div class="ui-grid-b ui-responsive">
+				        <div class="ui-icon-carat-u"><a href="#sesion1-instrucciones1-1" class="ui-btn ui-shadow ui-corner-all">Siguiente</a></div>
+					</div>
+				</div>
+				<!-- /page -->
+
+			<!-- SESION 1: Start of sesion1-instrucciones1-1-->
+			<div data-role="page" id="sesion1-instrucciones1-1">
+				<div role="main" class="ui-content">
+					<h1>Instrucciones 1/1</h1>
+				    <p> Por favor, prestad atención al video que viene a continuación  “En el vientre”. </p>
+				</div>
+
+				<div class="ui-grid-b ui-responsive">
+				    <div class="ui-icon-carat-u"><a href="#sesion1-video1" class="ui-btn ui-shadow ui-corner-all">Siguiente</a></div>
+				</div>
+				<!-- /content -->
+			</div>
+			<!-- /page -->
+
+			<!-- SESION 1: Start of sesion1-video1-->
+			<div data-role="page" id="sesion1-video1">
+				<div role="main" class="ui-content">
+				<a class="fancybox" data-type="iframe " href="http://www.youtube.com/embed/m2Fy5_Y1XAY?autoplay=1" title="youtube">open youtube (embed mode)</a>
+					<!--<a class="fancybox" data-type="iframe " href="https://www.youtube.com/watch?v=m2Fy5_Y1XAY?autoplay=1" title="youtube">open youtube (embed mode)</a>-->
+				</div>
+
+				<div class="ui-grid-b ui-responsive">
+				    <div class="ui-icon-carat-u"><a href="#sesion1-instrucciones2-1" class="ui-btn ui-shadow ui-corner-all">Siguiente</a></div>
+				</div>
+				<!-- /content -->
+			</div>
+			<!-- /page -->
+
+			<!-- SESION 1: Start of sesion1-instrucciones2-1-->
+			<div data-role="page" id="sesion1-instrucciones2-1">
+				<div role="main" class="ui-content">
+					<h1>Instrucciones 1/1</h1>
+				    <p> Por favor, responded a las preguntas del siguiente cuestionario. </p>
+				</div>
+
+				<div class="ui-grid-b ui-responsive">
+				    <div class="ui-icon-carat-u"><a href="#sesion1-cuestionario1-1" class="ui-btn ui-shadow ui-corner-all">Siguiente</a></div>
+				</div>
+				<!-- /content -->
+			</div>
+			<!-- /page -->
+
+			<!-- SESION 1: Start of sesion1-cuestionario1-1 -->
+			<div data-role="page" id="sesion1-cuestionario1-1">
+			    <div role="main" class="ui-content">
+			    	<h1>Pregunta 1/2</h1>
+					<fieldset data-role="controlgroup">
+	        			<legend>¿Te ha causado inquietud?</legend>
+	        			<input type="radio" name="radio-choice-1" id="radio-choice-1" value="choice-1" checked="checked">
+	        			<label for="radio-choice-1">Mucha</label>
+	        			<input type="radio" name="radio-choice-1" id="radio-choice-2" value="choice-2">
+	        			<label for="radio-choice-2">Bastante</label>
+	        			<input type="radio" name="radio-choice-1" id="radio-choice-3" value="choice-3">
+	        			<label for="radio-choice-3">Moderada</label>
+	        			<input type="radio" name="radio-choice-1" id="radio-choice-4" value="choice-4">
+	        			<label for="radio-choice-4">Poca</label>
+	        			<input type="radio" name="radio-choice-1" id="radio-choice-5" value="choice-5">
+	        			<label for="radio-choice-5">Ninguna</label>
+					</fieldset>
+			    </div>
+
+			    <div class="ui-grid-b ui-responsive">
+				    <div class="ui-icon-carat-u"><a href="#sesion1-cuestionario1-2" class="ui-btn ui-shadow ui-corner-all">Siguiente</a></div>
+				</div>
+
+			    <!-- /content -->
+			</div>
+			<!-- /page -->
+
+			<!-- SESION 1: Start of sesion1-cuestionario1-2 -->
+			<div data-role="page" id="sesion1-cuestionario1-2">
+			    <div role="main" class="ui-content">
+			    	<h1>Pregunta 2/2</h1>
+					<fieldset data-role="controlgroup">
+					    <legend>¿Qué emociones positivas y negativas has sentido hoy?</legend>
+					    <input type="checkbox" name="checkbox-1a" id="checkbox-1a" checked="">
+					    <label for="checkbox-1a">Alegría</label>
+					    <input type="checkbox" name="checkbox-2a" id="checkbox-2a">
+					    <label for="checkbox-2a">Felicidad</label>
+					    <input type="checkbox" name="checkbox-3a" id="checkbox-3a">
+					    <label for="checkbox-3a">Calma</label>
+					    <input type="checkbox" name="checkbox-4a" id="checkbox-4a">
+					    <label for="checkbox-4a">Tristeza</label>
+					    <input type="checkbox" name="checkbox-5a" id="checkbox-5a">
+					    <label for="checkbox-5a">Miedo</label>
+					    <input type="checkbox" name="checkbox-6a" id="checkbox-6a">
+					    <label for="checkbox-6a">Ansiedad</label>
+					    <input type="checkbox" name="checkbox-7a" id="checkbox-7a">
+					    <label for="checkbox-7a">Otra</label>
+					</fieldset>
+					<label for="textarea">Por favor, si ha marcado otra, indique cuál:</label>
+					<textarea cols="40" rows="8" name="textarea" id="textarea"></textarea>
+			    </div>
+
+			    <div class="ui-grid-b ui-responsive">
+				    <div class="ui-icon-carat-u"><a href="#sesion1-completada" class="ui-btn ui-shadow ui-corner-all">Siguiente</a></div>
+				</div>
+			    <!-- /content -->
+			</div>
+			<!-- /page -->
+
+		<!-- Start of sesion 1 completada -->
+		<div data-role="page" id="sesion1-completada">
+		    <div role="main" class="ui-content">
+		        <h1>Has completado la sesión 1</h1>
+		    </div>
+		    <!-- /content -->
+		</div>
+		<!-- /page -->
+
+		<!-- Start of sesion 2 -->
+		<div data-role="page" id="sesion2">
+		    <div role="main" class="ui-content">
+		    	<a href="#mis-sesiones" class="ui-btn">Mis Sesiones</a>
+		        <h1>Día 2</h1>
+		    </div>
+		    <!-- /content -->
+		</div>
+		<!-- /page -->
+
+
+        <script type="text/javascript" src="cordova.js"></script>
+    </body>
+</html>
